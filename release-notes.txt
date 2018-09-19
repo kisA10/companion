@@ -70,3 +70,14 @@ Initial release
 
 - Add vlc.sdp
 - Update Water Linked driver
+
+0.0.16:
+
+- Add advanced options for network configuration on /network page. It is possible to change Companion Network configuration to DHCP Server, DHCP Client or Manual(default) mode
+- Add detailed status of processes on the /system page. Display error information for easier debugging
+- Add Companion firmware version information to the Header
+- Allow downloading system logs for more advanced error identification. It can be done with a button at the bottom of /system page
+- Allow hotplugging the camera. No longer need to restart the pi every time the camera is unplugged and plugged in again
+- Allow usage of a different microphone device than the one which is inbuilt in the camera. Audio is hotpluggable and independent of the camera
+- Allow pixhawk hotplugging. It is easy to unplug and plug the pixhawk back in without rebooting
+- Many other bugfixes and improvements
