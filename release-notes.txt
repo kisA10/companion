@@ -73,11 +73,20 @@ Initial release
 
 0.0.16:
 
-- Add advanced options for network configuration on /network page. It is possible to change Companion Network configuration to DHCP Server, DHCP Client or Manual(default) mode
-- Add detailed status of processes on the /system page. Display error information for easier debugging
+- Add advanced options for network configuration on /network page. It is possible to change Companion Network configuration to DHCP Server, DHCP Client or Manual(default) mode. The advanced options can be accessed with a toggle switch in the header
+- Add detailed status of processes on the /system page. Display additional error information on the processes for easier debugging
 - Add Companion firmware version information to the Header
+- Add pixhawk firmware version to the /system page
 - Allow downloading system logs for more advanced error identification. It can be done with a button at the bottom of /system page
 - Allow hotplugging the camera. No longer need to restart the pi every time the camera is unplugged and plugged in again
 - Allow usage of a different microphone device than the one which is inbuilt in the camera. Audio is hotpluggable and independent of the camera
-- Allow pixhawk hotplugging. It is easy to unplug and plug the pixhawk back in without rebooting
-- Many other bugfixes and improvements
+- Allow pixhawk hotplugging. It is easy to unplug and plug the pixhawk back in and regain connection to the ROV, without having to reboot the system.
+- Add TCP support for NMEA receiver
+- Use Mavlink2 as default
+- Add command to kill all screens at once
+- Add aircraft option to mavproxy default parameters
+- Bugfix: Add unique property for bootstrap switches on the /camera page to avoid conflicts with other elements 
+- Bugfix: Checking for pixhawk connection to the Raspberry pi instead of checking for any serial devices before starting Mavproxy
+- Bugfix: Make the Raspberry Pi camera work again
+- Bugfix: Fixed pixhawk parameter flashing script
+- Bugfix: Removed displaying status "undefined" for internet connection on /network Page
